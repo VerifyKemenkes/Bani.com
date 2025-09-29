@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>certificate succes verified !</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#f4f7fb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#0f62fe;
+      --success:#16a34a;
+      --shadow: 0 6px 18px rgba(20,24,40,0.08);
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg, var(--bg), #eef3fb 60%);
+      padding:32px;
+      color:#0b1220;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    .container{
+      max-width:900px;
+      margin:0 auto;
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      margin-bottom:20px;
+    }
+
+    .title{
+      display:flex;
+      align-items:baseline;
+      gap:12px;
+    }
+
+    h1{
+      font-size:20px;
+      margin:0;
+      letter-spacing:0.2px;
+      color:#07204a;
+    }
+
+    .sub{
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:12px;
+      padding:28px;
+      box-shadow:var(--shadow);
+      display:grid;
+      grid-template-columns: 1fr 340px;
+      gap:22px;
+      align-items:start;
+    }
+
+    .person{ padding:6px 0; }
+
+    .row{
+      display:flex;
+      gap:14px;
+      align-items:center;
+      margin-bottom:12px;
+      flex-wrap:wrap;
+    }
+
+    .label{
+      min-width:140px;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .value{
+      font-weight:600;
+      color:#07204a;
+      font-size:15px;
+    }
+
+    .badge{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      padding:8px 12px;
+      border-radius:999px;
+      background:rgba(16,185,129,0.09);
+      color:var(--success);
+      font-weight:700;
+      font-size:13px;
+    }
+
+    .right{
+      background:linear-gradient(180deg,#ffffff, #fbfdff);
+      border-radius:10px;
+      padding:18px;
+      border:1px solid rgba(7,32,74,0.04);
+      text-align:center;
+    }
+
+    .seal{
+      width:86px;
+      height:86px;
+      border-radius:50%;
+      background:linear-gradient(180deg,#fff,#f1f7ff);
+      display:grid;
+      place-items:center;
+      border:3px solid rgba(15,98,254,0.12);
+      font-weight:800;
+      color:var(--accent);
+      font-size:14px;
+      margin:0 auto 12px;
+      box-shadow:0 6px 18px rgba(12,40,120,0.06);
+    }
+
+    footer{ margin-top:18px; color:var(--muted); font-size:13px; text-align:center; }
+
+    @media (max-width:880px){
+      .card{grid-template-columns:1fr;}
+      .label{min-width:120px}
+      header{flex-direction:column;align-items:flex-start;gap:8px}
+    }
+
+    @media print{
+      body{background:white;padding:0}
+      .card{box-shadow:none;border:none}
+      header, footer{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="title">
+        <div>
+          <h1>certificate succes verified !</h1>
+          <div class="sub">Dokumen ini telah diverifikasi secara digital dan dapat dipercaya keasliannya.</div>
+        </div>
+      </div>
+      <div class="badge">✓ VERIFIED</div>
+    </header>
+
+    <article class="card">
+      <section class="person">
+        <div style="margin-top:6px">
+          <div class="row"><div class="label">Nama</div><div class="value">BANI</div></div>
+          <div class="row"><div class="label">Tanggal Lahir</div><div class="value">15 Maret 1970</div></div>
+          <div class="row"><div class="label">Gender</div><div class="value">Laki-laki</div></div>
+          <div class="row"><div class="label">Sertifikat ID</div><div class="value">972401</div></div>
+          <div class="row"><div class="label">Tanggal Terbit</div><div class="value">17 Februari 2023</div></div>
+          <div class="row"><div class="label">Dosis</div><div class="value">3</div></div>
+          <div class="row"><div class="label">Total Dosis</div><div class="value">3</div></div>
+          <div class="row"><div class="label">Fasilitas Vaksin</div><div class="value">KLINIK ANDILIA</div></div>
+        </div>
+      </section>
+
+      <aside class="right">
+        <div class="seal">VERIFIED</div>
+        <div>Terbit: <strong>17 Februari 2023</strong></div>
+      </aside>
+    </article>
+
+    <footer>&copy; 2023 Sistem Verifikasi Digital</footer>
+  </div>
+</body>
+</html>
